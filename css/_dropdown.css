@@ -1,0 +1,39 @@
+.dropdown {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
+  }
+  
+  .dropdown.dropdown__active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .dropdown__simplebar {
+    height: 240px;
+    padding-right: 20px;
+  }
+  .dropdown__item {
+    min-height: 30px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .dropdown__item:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .dropdown__simplebar .simplebar-track.simplebar-vertical {
+    background-color: grey;
+    width: 2px;
+  }
+  .dropdown__simplebar .simplebar-scrollbar {
+    width: 2px;
+    background-color: pink;
+  }
